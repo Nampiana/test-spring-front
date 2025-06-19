@@ -82,7 +82,7 @@ function Sidebar() {
               </li>
 
               <li>
-                <Link to="/produit">
+                <Link to="/utilisateur">
                   <i className="fa fa-users orange_color"></i>{" "}
                   <span>Utilisateurs</span>
                 </Link>
