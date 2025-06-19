@@ -38,6 +38,14 @@ function useProduit() {
       .catch((err) => console.error(err));
   };
 
+  const getProduit = (id, callback = () => {}) => {
+  ProduitServices.getOne(id)
+    .then((res) => {
+      callback(res.data);
+    })
+    .catch((err) => console.error(err));
+};
+
  
   const deleteProduit = (id, callback = () => {}) => {
     ProduitServices.delete(id)
@@ -48,7 +56,7 @@ function useProduit() {
       .catch((err) => console.error(err));
   };
 
-  return { produit, createProduit, updateProduit, deleteProduit };
+  return { produit, createProduit, updateProduit, deleteProduit, getProduit };
 }
 
 export default useProduit;

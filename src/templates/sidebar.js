@@ -75,7 +75,14 @@ function Sidebar() {
         <ul className="list-unstyled components">
             <>
               <li>
-                <Link to="/users">
+                <Link to="/produit">
+                  <i className="fa fa-users orange_color"></i>{" "}
+                  <span>Produits</span>
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/produit">
                   <i className="fa fa-users orange_color"></i>{" "}
                   <span>Utilisateurs</span>
                 </Link>
